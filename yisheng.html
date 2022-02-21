@@ -7,22 +7,52 @@
 <table  align="center" width="560" white-space=nowrap height="192" border="0" cellpadding="4" cellspacing="1" bordercolor="#ACD2DB" bgcolor="#ACD2DB" class="big_td">
   <tr>
     <td width="100" height="25" align="right" valign="middle" bgcolor="#DEEBEF" scope="col">故障机型：</td>
-    <td height="25" align="left" valign="middle" bgcolor="#DEEBEF" scope="col">&nbsp;&nbsp;<?php echo $_POST["title"];?>111</td>
+    <td height="25" align="left" valign="middle" bgcolor="#DEEBEF" scope="col">&nbsp;&nbsp;<?php echo $_POST["title"];?>SS4G电力机车</td>
   </tr>
   <tr>
     <td height="31" align="right" valign="middle" bgcolor="#DEEBEF">故障车号：</td>
-    <td align="left" valign="middle" bgcolor="#DEEBEF">&nbsp;&nbsp;<?php echo $_POST["type"];?>111</td>
+    <td align="left" valign="middle" bgcolor="#DEEBEF">&nbsp;&nbsp;<?php echo $_POST["type"];?>通常故障</td>
   </tr>
   <tr>
     <td height="104" align="right" valign="middle" bgcolor="#DEEBEF">故障描述：</td>
-    <td height="104" align="left" valign="middle" bgcolor="#DEEBEF">&nbsp;&nbsp;<?php echo $_POST["content"];?>111</td>
+    <td height="104" align="left" valign="middle" bgcolor="#DEEBEF"><?php echo $_POST["content"];?>机车摘头时因折角塞门关闭过猛，或其他原因起非常，紧急放风阀动作，排风不止，不能正常缓解机车制动。</td>
   </tr>
   <tr>
     <td height="104" align="right" valign="middle" bgcolor="#DEEBEF">处理方法：</td>
-    <td height="104" align="left" valign="middle" bgcolor="#DEEBEF">&nbsp;&nbsp;<?php echo $_POST["content"];?>111</td>
+    <td height="104" align="left" valign="middle" bgcolor="#DEEBEF">&nbsp;&nbsp;<?php echo $_POST["content"];?>第一步：敲击紧急放风阀94YV，同时撇非常。<br/>&nbsp;&nbsp;第二步：将制动频柜左上角464QS打至安全切除位。<br/>&nbsp;&nbsp;第三步：关闭制动频柜背面116/117阀，切除紧急放风。</td>
   </tr>
   <tr>
     <td height="31" align="right" valign="middle" bgcolor="#DEEBEF">补充说明：</td>
-    <td align="left" valign="middle" bgcolor="#DEEBEF">&nbsp;&nbsp;<?php echo $_POST["type"];?>111</td>
+    <td align="left" valign="middle" bgcolor="#DEEBEF">&nbsp;&nbsp;<?php echo $_POST["type"];?>此故障多发于机车摘头时，关闭或开放折角塞门时应当缓开慢关。</td>
+  </tr>
+</table>
+<br/>
+<br/>
+<title>查看机车处方</title>
+<table  align="center" width="560"  white-space=nowrap border="0" cellpadding="4" cellspacing="1" bordercolor="#ACD2DB" bgcolor="#ACD2DB" class="big_td">
+  <tr>
+    <td height="33" background="images/list.jpg" id="list">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机车医生：</td>
+  </tr>
+</table>
+<table  align="center" width="560" white-space=nowrap height="192" border="0" cellpadding="4" cellspacing="1" bordercolor="#ACD2DB" bgcolor="#ACD2DB" class="big_td">
+  <tr>
+    <td width="100" height="25" align="right" valign="middle" bgcolor="#DEEBEF" scope="col">故障机型：</td>
+    <td height="25" align="left" valign="middle" bgcolor="#DEEBEF" scope="col">&nbsp;&nbsp;<?php echo $_POST["title"];?></td>
+  </tr>
+  <tr>
+    <td height="31" align="right" valign="middle" bgcolor="#DEEBEF">故障车号：</td>
+    <td align="left" valign="middle" bgcolor="#DEEBEF">&nbsp;&nbsp;<?php echo $_POST["type"];?></td>
+  </tr>
+  <tr>
+    <td height="104" align="right" valign="middle" bgcolor="#DEEBEF">故障描述：</td>
+    <td height="104" align="left" valign="middle" bgcolor="#DEEBEF"><?php echo $_POST["content"];?></td>
+  </tr>
+  <tr>
+    <td height="104" align="right" valign="middle" bgcolor="#DEEBEF">处理方法：</td>
+    <td height="104" align="left" valign="middle" bgcolor="#DEEBEF">&nbsp;&nbsp;<?php echo $_POST["content"];?></td>
+  </tr>
+  <tr>
+    <td height="31" align="right" valign="middle" bgcolor="#DEEBEF">补充说明：</td>
+    <td align="left" valign="middle" bgcolor="#DEEBEF">&nbsp;&nbsp;<?php echo $_POST["type"];?></td>
   </tr>
 </table>
