@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>临河运用车间电子图书馆</title>
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
 
 <link rel="stylesheet" href="static/css/swiper.min.css">
 <link rel="stylesheet" href="static/css/index.css">
@@ -79,7 +79,7 @@ text-align:center
               <div class="u-title">
               <p>
                 <h6>搜索框</h6> <br>
-              <select name="" onchange="javascript:window.open(this.options[this.selectedIndex].value)">
+              <select class="singleSelect" name="" onchange="javascript:window.open(this.options[this.selectedIndex].value)">
               <option value="#" selected="selected">在下拉框内点击即可下载</option>
               <option value="./规章题库.docx" download="规章题库.docx">规章题库</option>
               <option value="./电力直流专业题库.docx" download="电力直流专业题库.docx" >电力直流专业题库</option>
@@ -91,12 +91,20 @@ text-align:center
               </div>
               
             <div class="x-b"></div>
+
         </div>
       </div>
     </div>
   </div>
 </div>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
 
+<script type="text/javascript">
+  $(document).ready(function () {//加载页面时执行select2
+    $('.singleSelect').select2();
+  });
+</script>
 
 <div class="m-wrap g-sys" id="tds">
   <div class="m-box">
