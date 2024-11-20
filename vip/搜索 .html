@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Lei Shi">
+  <meta http-equiv="Cache-Control" content="o-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="csrf-token" content="1483780974##87f89328c5616669f00302a263fe9061bb852818">
+	
+		
+  <title>包机实训 —— 随时随地，动手实践</title>
+		
+	
+
+    
+  <meta content="该项目依托VR全景技术、前端、后端等技术实现对《VR全景教学实训平台》的搭建，目前正在不断完善，致力于实现机务教学的信息化，可作为日常学习、应急故障处置、定职、提职、技术比武教学的辅助平台。" name="description">
+  <meta content="包机实训,VR，全景，教学，故障处理，部件认知，非正常处理，作业场风险点把控，机车" name="keywords">
+  
+  <meta content="包机实训，刘子铭" name="author">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="../static/font-awesome//4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/highlight.js/9.8.0/monokai-sublime.min.css">
+    <link rel="stylesheet" href="../app/css/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../app/css/libs/katex/0.6.0/katex.min.css">
+    <link rel="stylesheet" href="../app/css/libs/videojs/5.11.7/video-js.min.css">
+	<link rel="stylesheet" href="../app/css/dest/styles.css?=2016121272249">
+
+	<style>
+		@font-face {
+			font-family: "lantingxihei";
+			src: url("../fonts/FZLTCXHJW.TTF");
+		}
+
+        /* modal 模态框*/
+        #invite-user .modal-body {
+            overflow: hidden;
+        }
+		#invite-user .modal-body .form-label {
+			margin-bottom: 16px;
+			font-size:14px;
+		}
+		#invite-user .modal-body .form-invite {
+			width: 80%;
+			padding: 6px 12px;
+			background-color: #eeeeee;
+			border: 1px solid #cccccc;
+			border-radius: 5px;
+			float: left;
+			margin-right: 10px;
+		}
+		#invite-user .modal-body .msg-modal-style {
+			background-color: #7dd383;
+			margin-top: 10px;
+			padding: 6px 0;
+			text-align: center;
+			width: 100%;
+		}
+		#invite-user .modal-body .modal-flash {
+			position: absolute;
+			top: 53px;
+			right: 74px;
+			z-index: 999;
+		}
+		/* end modal */
+
+        .en-footer {
+            padding: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+
+    <style>
+        div.tooltip {
+            position:absolute;
+            top:0;
+        }
+    </style>    
+</head>
+
+<body>
+	
+        
+        
+            
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">
+                <span class="sr-only">包机实训</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="../img/logo_03.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="header-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="">
+                    <a href="../paths/index.html">学习菜单</a>
+                </li>
+                <li class=" bootcamp new-nav logo-1111">
+                    <a href="../bootcamp/index.html">日常演练</a>
+                    
+                </li>
+
+                <li class="">
+                    <a href="../questions/index.html">点对点解答</a>
+                </li>
+                <li class="dropdown ">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                        线上课程
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="" href="../courses/index.html" >全部课程</a></li>
+                        <li><a class="" href="../courses/index.html" >SS4G型机车VR全景演练</a></li>
+                        <li><a class="" href="../courses/index.html" >FXN3C型机车VR全景演练</a></li>
+                        <li><a class="" href="../courses/index.html" >DF8B型机车VR全景演练</a></li>
+                        <li><a class="" href="../courses/index.html" >HXD3C型机车VR全景演练</a></li>
+                        <li><a class="" href="../courses/index.html" >非正常处置教学</a></li>
+                        <li><a class="" href="../courses/index.html" >应急故障处置教学</a></li>
+                    </ul>
+                </li>
+
+                <li class=" new-nav logo-1111">
+                    <a href="../vip/搜索 .html">规章查询</a>
+                    
+                </li>
+                <li class=" new-nav logo-1111">
+                    <a href="../vip/index2.html">专业知识</a>
+                    
+                </li>
+                <li class=" new-nav logo-1111">
+                    <a href="../vip/涨知识.html">知识扩展</a>
+                    
+                </li>
+                <li class=" new-nav logo-1111">
+                    <a href="../developer/index.html">实训预约</a>
+                    
+                </li>
+                
+            </ul>
+
+            
+
+            
+
+            <form class="navbar-form navbar-right" action="search" method="get" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="search" autocomplete="off" placeholder="菜单/订单/点对点">
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+        
+	
+<div class="vip-header layout-no-margin-top" style="min-height:215px;">
+    <h1 class="vip-header-title">规章搜索</h1>
+    <h4 class="vip-header-description">收录《技规》、《行规》、《操规》、《运规》等规章条款，实现一键搜索，快速匹配相关条款。</h4>
+</div>
+<div class="vip-details">
+    <div class="container">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="搜索..">
+
+            <ul id="myUL">
+                <li><a href="#">【技规-第1条】  铁路的基本建设、产品制造应综合配套，保证质量，采用系统集成技术，实现各子系统顶层协调统一，采用保证行车安全的技术设备，实现技术设备标准化、系列化、模块化、信息化，不断提高运输能力。</a></li>
+                <li><a href="#">【技规-第2条】  铁路基本建设应严格按照国家规定的程序进行，必须符合国家相关法律法规，执行国家标准、行业标准和技术规范。</a></li>
+
+                <li><a href="#">【技规-第8条】  新设备（包括改造后的设备）投入使用前须有操作规程、竣工图纸等技术文件和保证安全生产的办法与管理细则，经过技术测验合格并对有关人员进行培训后，方可使用。</a></li>
+                <li><a href="#">【技规-第238条】  道岔除使用、清扫、检查或修理时外，均须保持定位。道岔的定位规定如下：<br>
+                1.单线车站正线进站道岔，为由车站两端向不同线路开通的位置；<br>
+                2.双线车站正线进站道岔，为各该正线开通的位置；<br>
+                3.区间内正线道岔及站内正线上其他道岔（引向安全线、避难线的除外），为正线开通的位置；<br>
+                4.引向安全线、避难线的道岔，为安全线、避难线开通的位置；<br>
+                5.到发线上的中岔，为到发线开通的位置；<br>
+                6.其他由车站负责管理的道岔，由车站规定。<br>
+                车站道岔的定位，应在《站细》内记明。集中操纵的道岔及不办理接发列车的非集中操纵的道岔可不保持定位（到发线上的中岔和引向安全线、避难线的道岔除外）。段管线道岔的定位，由各段自行规定。
+
+</a></li>
+                <li><a href="关门车是什么车.pdf">【技规-262条】  列车中的机车和车辆的自动制动机，均应加入全列车的制动系统。<br>
+                货物列车中因装载的货物规定需停止制动作用的车辆，自动制动机临时发生故障的车辆，准许关闭截断塞门（简称关门车），但列检作业场所在站编组始发的列车中，不得有制动故障关门车。编入列车的关门车数不超过现车总辆数的6%（尾数不足一辆按四舍五入计算）时，可不计算每百吨列车重量的换算闸瓦压力，不填发制动效能证明书；超过6%时，按第261条规定计算闸瓦压力，并填发制动效能证明书交与司机。关门车不得挂于机车后部三辆车之内；在列车中连续连挂不得超过两辆；列车最后一辆不得为关门车；列车最后第二、三辆不得连续关门。对于不适于连挂在列车中部但走行部良好的车辆，经列车调度员准许，可挂于列车尾部，以一辆为限，如该车辆的自动制动机不起作用时，须由车辆人员采取安全措施，保证不致脱钩。<br>
+                旅客列车、特快货物班列不准编挂关门车。在运行途中（包括在站折返）如遇自动制动机临时故障，在停车时间内不能修复时，准许关闭一辆，但列车最后一辆不得为关门车，120km/h速度等级及编组小于8辆的140km/h、160km/h速度等级列车按规定关门时需限速运行，车辆乘务员须向司机递交限速证明书。<br>
+                编有货车的军用列车、路用列车编挂关门车时，除有特殊规定外，执行货物列车的规定。
+                </a></li>
+                <li><a href="#">【行规-第37条】  列车中编挂关门车的补充规定（《技规》第262条）<br>
+                1.中途变更运行方向的货物列车，列车尾部3辆之内禁止编挂关门车。<br>
+                2.车站应按《技规》第262条规定的关门车编挂限制编组列车；在列检作业场所在站编组始发的货物列车中，不得有制动故障关门车。其他货车运用作业场，对编组的始发货物列车如发现关门车编挂辆数不符合规定时，也应及时处理；对不能处理的关门车超过6%时，由列检计算闸瓦压力，并填发《制动效能证明书》交司机。<br>
+                3.到达解体的列车、成组或零星甩下的车辆中有关门车，经列检检查在规定时间内不能处理的，应及时通知车站。<br>
+                4.排（装）往包石线红峰岭至石拐、包白线营盘湾至白云鄂博、平沟专用线的车辆，禁止编挂关门车。<br>
+                其它集团公司装往上述地点不能处理的关门车、返回时产生的关门车，以及因装载货物需要而产生的关门车，编入列车时，须符合规定的闸瓦压力。因装载货物需要而关门的车辆编入列车时，在始发站、列车中转站由车站通知列检人员。
+                </a></li>
+
+                <li><a href="#">Weibo</a></li>
+            </ul>
+            <style>
+                #myInput {
+                  background-image: url('https://statiwww.jyshare.com/images/mix/searchicon.png'); /* 添加搜索按钮 */
+                  background-position: 10px 12px; /* 定位搜索按钮 */
+                  background-repeat: no-repeat; /* 图片不重复 */
+                  width: 100%; /* 全屏幕显示 */
+                  font-size: 16px; /* 字体大小 */
+                  padding: 12px 20px 12px 40px; /* 设置内边距 */
+                  border: 1px solid #ddd; /* 添加灰色边框 */
+                  margin-bottom: 12px; /* 添加顶部的外边距 */
+                }
+     
+                #myUL {
+                  /* 移除默认的列表样式 */
+                  list-style-type: none;
+                  padding: 0;
+                  margin: 0;
+                }
+     
+                #myUL li a {
+                  border: 1px solid #ddd; /* 链接添加边框 */
+                  margin-top: -1px; /* 防止边框重复 */
+                  background-color: #f6f6f6; /* 设置灰色背景 */
+                  padding: 12px; /* 添加内边距 */
+                  text-decoration: none; /* 移除默认的下划线 */
+                  font-size: 18px; /* 设置字体大小 */
+                  color: black; /* 设置文本为黑色 */
+                  display: block; /* 以块形式填充到列表 */
+                }
+     
+                #myUL li a:hover:not(.header) {
+                  background-color: #eee; /* 为所有链接添加悬停效果，标题除外 */
+                }
+            </style>
+
+            <script>
+                function myFunction() {
+                  // 声明变量
+                  var input, filter, ul, li, a, i, txtValue;
+                  input = document.getElementById('myInput');
+                  filter = input.value.toUpperCase();
+                  ul = document.getElementById("myUL");
+                  li = ul.getElementsByTagName('li');
+     
+                  // 循环遍历所有列表项，并隐藏那些与搜索查询不匹配的项
+                  for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                      li[i].style.display = "";
+                    } else {
+                      li[i].style.display = "none";
+                    }
+                  }
+                }
+            </script>
+
+
+    </div>
+</div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+            
+        
+	
+</body>
+</html>
