@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Lei Shi">
+  <meta http-equiv="Cache-Control" content="o-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="csrf-token" content="1483758872##fd2cac389b2b7c009a744bcaecaa41d71592cfe8">
+	
+		
+        <title>包机实训 ——— 随时随地，动手实践</title>
+		
+	
+
+    
+    <meta content="该项目依托VR全景技术、前端、后端等技术实现对《VR全景教学实训平台》的搭建，目前正在不断完善，致力于实现机务教学的信息化，可作为日常学习、应急故障处置、定职、提职、技术比武教学的辅助平台。" name="description">
+    <meta content="包机实训,VR，全景，教学，故障处理，部件认知，非正常处理，作业场风险点把控，机车" name="keywords">
+    
+    <meta content="包机实训，刘子铭" name="author">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="static/font-awesome//4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/highlight.js/9.8.0/monokai-sublime.min.css">
+    <link rel="stylesheet" href="app/css/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/css/libs/katex/0.6.0/katex.min.css">
+    <link rel="stylesheet" href="app/css/libs/videojs/5.11.7/video-js.min.css">
+	<link rel="stylesheet" href="app/css/dest/styles.css?=2016121272249">
+
+	<style>
+		@font-face {
+			font-family: "lantingxihei";
+			src: url("fonts/FZLTCXHJW.TTF");
+		}
+
+        /* modal 模态框*/
+        #invite-user .modal-body {
+            overflow: hidden;
+        }
+		#invite-user .modal-body .form-label {
+			margin-bottom: 16px;
+			font-size:14px;
+		}
+		#invite-user .modal-body .form-invite {
+			width: 80%;
+			padding: 6px 12px;
+			background-color: #eeeeee;
+			border: 1px solid #cccccc;
+			border-radius: 5px;
+			float: left;
+			margin-right: 10px;
+		}
+		#invite-user .modal-body .msg-modal-style {
+			background-color: #7dd383;
+			margin-top: 10px;
+			padding: 6px 0;
+			text-align: center;
+			width: 100%;
+		}
+		#invite-user .modal-body .modal-flash {
+			position: absolute;
+			top: 53px;
+			right: 74px;
+			z-index: 999;
+		}
+		/* end modal */
+
+        .en-footer {
+            padding: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+	
+<style style="text/css">
+.navbar-banner {
+    margin-top: 50px;
+    background: url("img/homepage-bg.png");
+    background-size: cover;
+    backgtound-repeat: no-repeat;
+}
+</style>
+
+
+	
+    
+</head>
+
+<body>
+	
+        
+        
+            
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">
+                <span class="sr-only">包机实训</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img src="img/logo_03.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="header-navbar-collapse">
+            <ul class="nav navbar-nav">
+
+                
+            </ul>
+
+            
+
+            
+
+        </div>
+    </div>
+</nav>
+
+        
+	
+
+
+
+
+    <script src="app/dest/lib/lib.js?=2016121272249"></script>
+    <script src="static/jquery/2.2.4/jquery.min.js"></script>
+    <script src="static/ace/1.2.5/ace.js"></script>
+    <script src="static/aliyun/aliyun-oss-sdk-4.3.0.min.js"></script>
+    <script src="static/highlight.js/9.8.0/highlight.min.js"></script>
+    <script src="static/jspdf/1.2.61/jspdf.min.js"></script>
+    <script src="static/plupload/2.1.9/js/plupload.full.min.js"></script>
+    <script src="static/zeroclipboard/2.2.0/ZeroClipboard.min.js"></script>
+    <script src="static/videojs/video.min.js"></script>
+    <script src="static/bootstrap-tour/0.11.0/js/bootstrap-tour.min.js"></script>
+    <script src="static/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+    <script src="static/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="static/bootstrap-table/1.11.0/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+
+    <script src="static/ravenjs/3.7.0/raven.min.js"></script>
+    <script>
+        Raven.config('https://bc3878b7ed0a4468a65390bd79e6e73f@sentry.shiyanlou.com/5', {
+            release: '3.12.13'
+        }).install();
+    </script>
+
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="../static/font-awesome//4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../static/highlight.js/9.8.0/monokai-sublime.min.css">
+<link rel="stylesheet" href="../app/css/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="../app/css/libs/katex/0.6.0/katex.min.css">
+<link rel="stylesheet" href="../app/css/libs/videojs/5.11.7/video-js.min.css">
+<link rel="stylesheet" href="../app/css/dest/styles.css?=2016121272249">
+
+<style>
+    @font-face {
+        font-family: "lantingxihei";
+        src: url("../fonts/FZLTCXHJW.TTF");
+    }
+
+    /* modal 模态框*/
+    #invite-user .modal-body {
+        overflow: hidden;
+    }
+    #invite-user .modal-body .form-label {
+        margin-bottom: 16px;
+        font-size:14px;
+    }
+    #invite-user .modal-body .form-invite {
+        width: 80%;
+        padding: 6px 12px;
+        background-color: #eeeeee;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        float: left;
+        margin-right: 10px;
+    }
+    #invite-user .modal-body .msg-modal-style {
+        background-color: #7dd383;
+        margin-top: 10px;
+        padding: 6px 0;
+        text-align: center;
+        width: 100%;
+    }
+    #invite-user .modal-body .modal-flash {
+        position: absolute;
+        top: 53px;
+        right: 74px;
+        z-index: 999;
+    }
+    /* end modal */
+
+    .en-footer {
+        padding: 30px;
+        text-align: center;
+        font-size: 14px;
+    }
+</style>
+<style>
+.privacy-title{
+    font-weight: 100;
+    font-family: "Microsoft Yahei";
+    color: #1ABC9C;
+    font-size: 32px;
+}
+.privacy-container {     
+    margin-bottom:15px;
+    background-color: #FFFFFF;
+    box-shadow: #CCCCCC 0px 1px 3px 0px;
+    padding: 40px;
+}
+.privacy-row{		
+    padding: 25px;
+}
+.privacy-h3{
+    margin-bottom: 24px;
+    font-weight: 100;
+    font-family: "Microsoft Yahei";
+    color: #1ABC9C;
+    font-size: 24px;
+}
+.privacy-row p{
+    line-height: 32px;
+    color: #6B767D;
+    font-size: 16px;
+    font-weight: 100;       
+}
+</style>
+
+
+
+
+</head>
+
+<body>
+
+    
+    
+        
+<nav class="navbar navbar-default navbar-fixed-top header">
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">
+            <span class="sr-only">包机实训</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+            <img src="img/logo_03.png">
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="header-navbar-collapse">
+       
+
+        
+        
+        
+
+       
+    </div>
+</div>
+</nav>
+
+    
+
+
+
+
+
+<div class="container layout layout-margin-top">
+
+
+<div class="row">
+    <div class="col-md-12 layout-body">
+        
+<div class="container content privacy-container">
+    <div class="row privacy-title">
+        技术博客
+    </div>
+    <div class="row privacy-row">
+        <p>技术博客尚在内测阶段，您暂时无权查看，有需要请与开发者联系，感谢您的支持。</p>
+    </div>
+    <div class="row privacy-row">
+        <p></p>
+    </div>
+    
+
+
+
+
+</body>
+</html>
