@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Lei Shi">
+  <meta http-equiv="Cache-Control" content="o-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="csrf-token" content="1483780974##87f89328c5616669f00302a263fe9061bb852818">
+	
+		
+  <title>包机实训 —— 随时随地，动手实践</title>
+		
+	
+
+    
+  <meta content="该项目依托VR全景技术、前端、后端等技术实现对《VR全景教学实训平台》的搭建，目前正在不断完善，致力于实现机务教学的信息化，可作为日常学习、应急故障处置、定职、提职、技术比武教学的辅助平台。" name="description">
+  <meta content="包机实训,VR，全景，教学，故障处理，部件认知，非正常处理，作业场风险点把控，机车" name="keywords">
+  
+  <meta content="包机实训，刘子铭" name="author">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="../static/font-awesome//4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/highlight.js/9.8.0/monokai-sublime.min.css">
+    <link rel="stylesheet" href="../app/css/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../app/css/libs/katex/0.6.0/katex.min.css">
+    <link rel="stylesheet" href="../app/css/libs/videojs/5.11.7/video-js.min.css">
+	<link rel="stylesheet" href="../app/css/dest/styles.css?=2016121272249">
+
+	<style>
+		@font-face {
+			font-family: "lantingxihei";
+			src: url("../fonts/FZLTCXHJW.TTF");
+		}
+
+        /* modal 模态框*/
+        #invite-user .modal-body {
+            overflow: hidden;
+        }
+		#invite-user .modal-body .form-label {
+			margin-bottom: 16px;
+			font-size:14px;
+		}
+		#invite-user .modal-body .form-invite {
+			width: 80%;
+			padding: 6px 12px;
+			background-color: #eeeeee;
+			border: 1px solid #cccccc;
+			border-radius: 5px;
+			float: left;
+			margin-right: 10px;
+		}
+		#invite-user .modal-body .msg-modal-style {
+			background-color: #7dd383;
+			margin-top: 10px;
+			padding: 6px 0;
+			text-align: center;
+			width: 100%;
+		}
+		#invite-user .modal-body .modal-flash {
+			position: absolute;
+			top: 53px;
+			right: 74px;
+			z-index: 999;
+		}
+		/* end modal */
+
+        .en-footer {
+            padding: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+
+	
+    
+</head>
+
+<body>
+	
+        
+        
+            
+
+
+
+
+
+
+    <nav class="navbar navbar-default navbar-fixed-top header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">包机实训</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img src="../img/logo_03.png">
+                </a>
+            </div>
+            
+        </div>
+    </nav>
+
+        
+	
+
+<div class="bootcamp-faq">
+    <div class="container">
+        <div class="bootcamp-faq-header">
+            <h4 class="bootcamp-faq-title">项目优势</h4>
+        </div>
+        <div class="bootcamp-faq-body">
+            <div class="bootcamp-faq-question">
+                <b>VR全景在线教学实训平台</b>与<b>故障处理书</b>相比有何优势？
+            </div>
+            <div class="bootcamp-faq-answer">
+                <img src="../img/bootcamp-answer.png">：<br>
+                
+                
+                <P style="line-height: 250%; position:relative;left: 80px;top: -30px"><br ><b>故障处理书:</b>文字多，内容较为枯燥。<br>
+               
+                    <b> <font color="red" >VR全景在线教学实训平台:</font></b>沉浸感十足，可以互动，有助于调动职工学习兴趣。<br>
+                   
+                    <b>故障处理书:</b>配图受视角限制，只能拍摄到要处理的部件，无法得知要处理部件的具体位置（如部件周围参照物、具体在哪个柜室、处理故障的最佳走行路线等）。
+                    <br>
+                    
+                    <b> <font color="red" >VR全景在线教学实训平台:</font></b>720°超大视角，要处理部件位置一目了然，根据导航可得知故障处理最佳走行路线，缩短故障处理时间。
+                    <br>
+                    
+                    
+                </P>
+                
+
+            </div>
+            <div class="bootcamp-faq-question">
+                <b>VR全景在线教学实训平台</b>与<b>现场实作教学
+                </b>相比有何优势？
+            </div>
+            <div class="bootcamp-faq-answer">
+                <img src="../img/bootcamp-answer.png">：<br>
+                
+                
+                <P style="line-height: 250%; position:relative;left: 80px;top: -30px"><br ><b>现场实作教学:</b>受时间空间影响较大，尤其是乘务员时间不固定，一个教学项目至少一星期才能全覆盖，时间成本高。
+                    <br>
+               
+                    <b> <font color="red" >VR全景在线教学实训平台:</font></b>不受时间空间影响，随时随地想学就学，而且和现场实作教学体验感相同，仿佛身临其境。
+                    <br>
+                   
+                    <b>现场实作教学:</b>现场实作教学时较为拥挤，只有少部分人可以看清全过程，剩下的人被挤在外面干着急。
+
+                    <br>
+                    
+                    <b> <font color="red" >VR全景在线教学实训平台:</font></b>杜绝了拥挤问题，VR全景教学平台可容纳全段职工同时学习，部件认知和故障处理导航功能像一位耐心的老师，手把手进行教学。
+
+                    <br>
+                    
+                    
+                </P>
+            </div>
+            <div class="bootcamp-faq-question">
+                <div class="bootcamp-faq-question">
+                    <b>VR全景在线教学实训平台</b>与<b>视频教学
+                    </b>相比有何优势？
+                </div>
+                <div class="bootcamp-faq-answer">
+                    <img src="../img/bootcamp-answer.png">：<br>
+                    
+                    
+                    <P style="line-height: 250%; position:relative;left: 80px;top: -30px"><br ><b>视频教学
+                        :</b>只能跟着拍摄者视角走，自由度不够。
+                        <br>
+                   
+                        <b> <font color="red" >VR全景在线教学实训平台:</font></b>可以按照自己的意愿在“车内”进行探索，对故障处理方法举一反三，印象更为深刻。
+                        <br>
+                       
+                        <b>视频教学
+                            :</b>拍摄者手难免会抖，影响观感。
+
+                        <br>
+                        
+                        <b> <font color="red" >VR全景在线教学实训平台:</font></b>各个场景稳定切换视角移动较为顺滑。
+
+                        <br>
+                        
+                        
+                    </P>
+                    
+                    
+        
+                    
+            </div>
+            <div class="bootcamp-faq-question">
+                <b>VR全景在线教学实训平台</b>与<b>微信发资料教学</b>相比有何优势？
+            </div>
+            <div class="bootcamp-faq-answer">
+                <img src="../img/bootcamp-answer.png">：<br>
+                
+                
+                <P style="line-height: 250%; position:relative;left: 80px;top: -30px"><br ><b>微信发资料教学:</b>对于经常要发的一些常用资料，如提职司机题库，每年都要发，重复劳动过多，不方便。<br>
+               
+                    <b> <font color="red" >VR全景在线教学实训平台:</font></b>一次上传，一劳永逸，需要时直接到“资源下载”区自行下载。<br>
+                   
+                    <b>微信发资料教学:</b>今天发点，明天发点，最后资料杂乱无章，无法整理，没有逻辑。
+                    <br>
+                    
+                    <b> <font color="red" >VR全景在线教学实训平台:</font></b>将资料分门别类整理好，使用者很据类别很轻松找到自己想要的资料，缜密的逻辑顺序有助于使用者查找翻阅。
+                    <br>
+                    <b>微信发资料教学:</b>发多少就学多少，缺乏学习自主性。
+                    <br>
+                    
+                    <b> <font color="red" >VR全景在线教学实训平台:</font></b>将资料尽可能多的收录进平台，，一些学有余力的职工可任意下载学习，从“要我学”逐渐转变为“我要学”。
+                    <br>
+                    
+                </P>
+                
+
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+
+	
+	
+
+	
+
+    
+    
+
+	
+		
+			
+		
+	
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div id="base-data"
+        
+        
+            data-flash="false"
+            
+        
+        
+        data-is-login=false
+        
+        data-is-jwt=true
+        data-socket-url="wss://comet.shiyanlou.com"
+        data-msg-user=""
+        data-msg-system=""
+    ></div>
+
+    <script src="../app/dest/lib/lib.js?=2016121272249"></script>
+    <script src="../static/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../static/ace/1.2.5/ace.js"></script>
+    <script src="../static/aliyun/aliyun-oss-sdk-4.3.0.min.js"></script>
+    <script src="../static/highlight.js/9.8.0/highlight.min.js"></script>
+    <script src="../static/jspdf/1.2.61/jspdf.min.js"></script>
+    <script src="../static/plupload/2.1.9/js/plupload.full.min.js"></script>
+    <script src="../static/zeroclipboard/2.2.0/ZeroClipboard.min.js"></script>
+    <script src="../static/videojs/video.min.js"></script>
+    <script src="../static/bootstrap-tour/0.11.0/js/bootstrap-tour.min.js"></script>
+    <script src="../static/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+    <script src="../static/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="../static/bootstrap-table/1.11.0/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+
+    <script src="../static/ravenjs/3.7.0/raven.min.js"></script>
+    <script>
+        Raven.config('https://bc3878b7ed0a4468a65390bd79e6e73f@sentry.shiyanlou.com/5', {
+            release: '3.12.13'
+        }).install();
+    </script>
+
+    
+<div id="jinja-data"
+    datA-bootcamp-start="../img/bootcamp-start.png"
+    datA-bootcamp-start-click="../img/bootcamp-start-click.png"
+    data-charge-course-phone-code="/user/sms/code"
+    ></div>
+
+<script src="../app/dest/bootcamp/index.js?=2016121272249"></script>        
+            
+            
+
+
+            
+        
+	
+</body>
+</html>
