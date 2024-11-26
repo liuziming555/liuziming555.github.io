@@ -1,28 +1,36 @@
-<!DOCTYPE html>  
-<html>  
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-<title>在线预览PDF文档</title>  
-<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">  
-<script type="text/javascript" src="../js/jquery.min.js"></script>  
-<script type="text/javascript" src="../js/jquery.media.js"></script>  
-<script type="text/javascript">  
-    $(function() {  
-        $('a.media').media({width:800, height:600});  
-        $('a.mediase').media({width:800, height:600});  
-    });  
-</script> 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PDFObject Example: Basic embed</title>
+<!--
+This example created for PDFObject.com by Philip Hutchison (www.pipwerks.com)
+Copyright 2016-2024, MIT-style license http://pipwerks.mit-license.org/
+Documentation: http://pdfobject.com 
+Source code: https://github.com/pipwerks/PDFObject
+-->
+
+<!-- site analytics for pdfobject.com, do not copy into your code -->
+<script defer data-domain="pdfobject.com" src="https://plausible.io/js/script.js"></script>
+
+<style>
+/* basic page styling */
+body { font: 15px/120% sans-serif; color: #555; background: #fff; padding: 2rem; margin: 0; }
+
+/* Give the PDF container some basic styling */
+.pdfobject-container { height: 500px; border: 1px solid #ccc; }
+</style>
 </head>
+
 <body>
-<center>
- <div class="panel panel-primary">
-   <div class="panel-heading" align="center">
-      <h2>预览文件</h2>
-   </div>
-   <div class="panel-body">
-	  <a class="media" href="https://online.updf.cn/pdf/share?shareId=867724297014091777"></a>  
-   </div>
-</center>
+<h1>PDFObject Example: Basic embed</h1>
+
+<div id="my-pdf"></div>
+
+<script src="https://unpkg.com/pdfobject@2.3.0/pdfobject.min.js"></script>
+<script>PDFObject.embed("../wj/FXN3C.pdf", "#my-pdf");</script>
+
 </body>
 </html>
