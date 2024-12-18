@@ -11,15 +11,15 @@
   <meta name="csrf-token" content="1483780974##87f89328c5616669f00302a263fe9061bb852818">
 	
 		
-        <title>包机实训 —— 随时随地，动手实践</title>
+  <title>包机实训 —— 随时随地，动手实践</title>
 		
 	
 
     
-        <meta content="该项目依托VR全景技术、前端、后端等技术实现对《VR全景教学实训平台》的搭建，目前正在不断完善，致力于实现机务教学的信息化，可作为日常学习、应急故障处置、定职、提职、技术比武教学的辅助平台。" name="description">
-        <meta content="包机实训,VR，全景，教学，故障处理，部件认知，非正常处理，作业场风险点把控，机车" name="keywords">
-        
-        <meta content="包机实训，刘子铭" name="author">
+  <meta content="该项目依托VR全景技术、前端、后端等技术实现对《VR全景教学实训平台》的搭建，目前正在不断完善，致力于实现机务教学的信息化，可作为日常学习、应急故障处置、定职、提职、技术比武教学的辅助平台。" name="description">
+  <meta content="包机实训,VR，全景，教学，故障处理，部件认知，非正常处理，作业场风险点把控，机车" name="keywords">
+  
+  <meta content="包机实训，刘子铭" name="author">
 
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="../static/font-awesome//4.7.0/css/font-awesome.min.css">
@@ -73,8 +73,44 @@
             font-size: 14px;
         }
     </style>
-	
-    
+<link rel="stylesheet" href="../restatic/js/libs/marked/katex/katex.min.css">
+<style>
+    .bootcamp-infobox {
+        margin: 50px 0 0;
+    }
+    .invite-friends-link {
+        margin-top:10px;
+        padding-left:8px;
+    }
+    .invite-friends-link input {
+        margin-left:-5px;
+    }
+    .invite-friends-link button {
+        float:left;
+        margin-top:5px;
+        margin-left:-5px;
+    }
+    .invite-friends-link .copy-msg {
+        float:left;
+        margin-top:10px;
+        margin-left:20px;
+        color:#42b1ad;
+    }
+    p.join-vip-faq {
+        margin-top:20px;
+        margin-bottom:-50px;
+        font-size:13px;
+    }
+    p.join-vip-faq img {
+        height:13px;
+        width:13px;
+        margin-top:-2px;
+    }
+    a.vip-without-bean {
+        font-size:18px;
+        line-height:30px;
+    }
+</style>    
 
 	
     
@@ -85,6 +121,7 @@
         
         
             
+
 
 
 
@@ -167,241 +204,197 @@
 	
 
 
-
-	
-	
-
-	
-
-
 <div class="container layout layout-margin-top">
     
+<ol class="breadcrumb">
+    <li><a href="/courses/">全部课程</a></li>
     
+    <li>
+    
+    <a href="/courses/?tag=Linux">非正常处置</a>
+    
+    </li>
+    
+    <li class="active">
+        <a href="/courses/1">
+        非正常行车处置办法
+        </a>
+    </li>
+</ol>
+
     <div class="row">
         <div class="col-md-9 layout-body">
             
-    <div class="content">
-        <div class="row course-cates">
-            <div class="col-md-1 course-cates-title">类别：</div>
-            <div class="col-md-11 course-cates-content">
-                <a class="active" href="">全部</a>
-                <a class="" href="">VR演练</a>
-                <a class="" href="">非正常处置</a>
-                <a class="" href="">应急故障处置</a>
-                <a class="" href="">部件检修</a>
-                <a class="" href="">机车电路</a>
+    
+    
+
+    
+
+    <div class="side-image side-image-mobile">
+        <img src="https://s2.loli.net/2024/12/18/vWAzDaP29Z7Ub4h.png">
+    </div>
+    <div class="content course-infobox">
+        <div class="clearfix course-infobox-header">
+            <h4 class="pull-left course-infobox-title">
+                
+                <span>非正常行车处置办法</span>
+                
+            </h4>
+            <div class="pull-right course-infobox-follow"
+                data-follow-url="/courses/1/follow"
+                data-unfollow-url="/courses/1/unfollow">
+                <span class="course-infobox-followers"></span>
+                <span></span>
+                
+                <i class="fa fa-star-o" data-next="/login?next=%2Fcourses%2F1"></i>
+                
             </div>
         </div>
+        <div class="clearfix course-infobox-body">
+            <div class="course-infobox-content">
+            <p>本课程利用动漫视频教学方式，使知识点更加简单易懂，提升学习兴趣。</p>
+            
+            </div>
+            
+            <div class="course-infobox-progress">
+                
+                
+                    
+                    <div class="course-progress-new"></div>
+
+                <span>（1/17）</span>
+            </div>
+            
+            
+            
+
+            
+                <div class="pull-right course-infobox-price">
+                
+                </div>
+            
+        </div>
+        
         
     </div>
-    <div class="content position-relative">
+    <div class="content">
         <ul class="nav nav-tabs" role="tablist">
-            <li class="active"><a href="/courses/?course_type=all&amp;tag=all&amp;fee=all">已上线</a></li>
+            
+            <li role="presentation" class="active">
+                <a href="#labs" aria-controls="labs" role="tab" data-toggle="tab">课程列表</a>
+            </li>
+            
+            <li role="presentation">
+                <a href="#comments" class="stat-event" aria-controls="comments" role="tab" data-stat="course_comment" data-toggle="tab">课程评论</a>
+            </li>
+            <li role="presentation">
+                <a href="#reports" class="stat-event" data-stat="course_report" aria-controls="reports" role="tab" data-toggle="tab">课后习题</a>
+            </li>
+
         </ul>
-        <div class="clearfix"></div>
-
-        <div class="search-result"></div>
-        <div class="row">
-        
+        <div class="tab-content">
             
-            
-
-
-<div class="col-md-4 col-sm-6  course">
-    <a class="course-box" href="VR演练.html">
-        <div class="sign-box">
-            
-            
-            
-            <i class="fa fa-star-o course-follow pull-right"
-                data-follow-url="/courses/63/follow"
-                data-unfollow-url="/courses/63/unfollow"  style="display:none"  ></i>
-            
-        </div>
-        <div class="course-img">
-            
-            <img alt="各机型全景VR演练" src="https://s2.loli.net/2024/12/17/3FDd6NAzmYjPua2.png">
-            
-        </div>
-        
-        <div class="course-body">
-            <span class="course-title" data-toggle="tooltip" data-placement="bottom" title="各机型全景VR演练">各机型全景VR演练</span>
-        </div>
-        <div class="course-footer">
-			<span class="course-per-num pull-left">
-                <i class="fa fa-users"></i>
+            <div role="tabpanel" class="tab-pane active" id="labs">
                 
-                57973
-                
-			</span>
-            <span class="course-bootcamp pull-right">训练营</span>
-            
-                
-            
-        </div>
 
-    </a>
-</div>
-<div class="col-md-4 col-sm-6  course">
-    <a class="course-box" href="../文件/FXN3C应急故障处置.html">
-        <div class="sign-box">
-            
-            
-            
-            <i class="fa fa-star-o course-follow pull-right"
-                data-follow-url="/courses/63/follow"
-                data-unfollow-url="/courses/63/unfollow"  style="display:none"  ></i>
-            
-        </div>
-        <div class="course-img">
-            
-            <img alt="FXN3C型机车应急故障处置" src="https://s2.loli.net/2024/12/17/x16ceog7kmJQhwU.png">
-            
-        </div>
+    
+    
+    
+<div class="lab-item ">
+    <div class="lab-item-status">
         
-        <div class="course-body">
-            <span class="course-title" data-toggle="tooltip" data-placement="bottom" title="FXN3C型机车应急故障处置">FXN3C型机车应急故障处置</span>
-        </div>
-        <div class="course-footer">
-			<span class="course-per-num pull-left">
-                <i class="fa fa-users"></i>
-                
-                57900
-                
-			</span>
-            <span class="course-bootcamp pull-right">训练营</span>
-            
-                
-            
-        </div>
-
-    </a>
-</div>
-
-            
-            
-
-
-
-<div class="col-md-4 col-sm-6  course">
-    <a class="course-box" href="DF8B故障40招.html">
-        <div class="sign-box">
-            
-            
-            
-            <i class="fa fa-star-o course-follow pull-right"
-                data-follow-url="/courses/1/follow"
-                data-unfollow-url="/courses/1/unfollow"  style="display:none"  ></i>
-            
-        </div>
-        <div class="course-img">
-            
-            <img alt="DF8B机车应急故障处置40招" src="https://s2.loli.net/2024/12/17/nTX6x8r9vbMkWAB.png">
-            
-        </div>
+            <img src="../img/lab-not-ok.png">
         
-        <div class="course-body">
-            <span class="course-title" data-toggle="tooltip" data-placement="bottom" title="DF8B机车应急故障处置40招">DF8B机车应急故障处置40招</span>
-        </div>
-        <div class="course-footer">
-			<span class="course-per-num pull-left">
-                <i class="fa fa-users"></i>
-                
-                85219
-                
-			</span>
-            <span class="course-bootcamp pull-right">训练营</span>
-            
-                
-            
-        </div>
-    </a>
-</div>
-
-<div class="col-md-4 col-sm-6  course">
-    <a class="course-box" href="非正常行车.html">
-        <div class="sign-box">
-            
-            
-            
-            <i class="fa fa-star-o course-follow pull-right"
-                data-follow-url="/courses/1/follow"
-                data-unfollow-url="/courses/1/unfollow"  style="display:none"  ></i>
-            
-        </div>
-        <div class="course-img">
-            
-            <img alt="非正常行车处置办法" src="https://s2.loli.net/2024/12/18/vWAzDaP29Z7Ub4h.png">
-            
-        </div>
-        
-        <div class="course-body">
-            <span class="course-title" data-toggle="tooltip" data-placement="bottom" title="非正常行车处置办法">非正常行车处置办法</span>
-        </div>
-        <div class="course-footer">
-			<span class="course-per-num pull-left">
-                <i class="fa fa-users"></i>
-                
-                3219
-                
-			</span>
-            <span class="course-bootcamp pull-right">训练营</span>
-            
-                
-            
-        </div>
-    </a>
-</div>
-        
-        
-        </div>
-        
-
-<nav class="pagination-container">
-    <ul class="pagination">
-        
-        <li class="disabled">
-            <a href="#" aria-label="Previous">
-                <span aria-hidden="true">上一页</span>
-            </a>
-        </li>
-        
-        
-        
-        <li class="active">
-            <a href="/courses/?course_type=all&amp;tag=all&amp;fee=all&amp;page=1">1</a>
-        </li>
-
-        
-        <li class="disabled">
-            <a href="#" aria-label="Previous">
-                <span aria-hidden="true">下一页</span>
-            </a>
-        </li>
-        
-    </ul>
-</nav>
-
-
     </div>
+    <div class="lab-item-index">第1节</div>
+    <div class="lab-item-title" data-toggle="tooltip" data-placement="bottom" title="列车退行的处置方法">列车退行的处置方法</div>
+    <div class="pull-right lab-item-ctrl">
+                <a class="btn btn-default" href="./资料.html" data-toggle="modal" data-sign="signin" data-next="/courses/1">查看资料</a>
+                <a class="btn btn-primary" href="../文件/视频/列车退行的处置方法.html" data-toggle="modal" data-sign="signin" data-next="/courses/1">开始上课</a> 
+    </div>
+</div>
+
+    
+
+
+
+
+            </div>
+            <div role="tabpanel" class="tab-pane course-comment" id="comments">
+                <div class="comment-box">
+                    <div class="comment-form">
+                        
+                            <div class="comment-form-unlogin">
+                                
+                                <a href="#sign-modal" data-toggle="modal" data-sign="signin" data-next="/courses/1"> </a>
+                                
+                            </div>
+                        
+                    </div>
+                    <div class="comment-title">最新评论</div>
+                    <div class="comment-list">
+                    </div>
+                    <div class="pagination-container"></div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="reports">
+				<span class="lab-id active" data-lab-id="None">全部</span>
+				
+				<span class="lab-id" data-lab-id="1">第1节</span>
+				
+				
+				
+                <div class="report-owner">
+                    <span class="owner-list" data-user-id="">我的习题</span> / <span class="owner-list active" data-user-id="None">所有习题</span>
+                </div>
+                <div class="row report-items"></div>
+                <div class="pagination-container"></div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="questions">
+                <a class="btn btn-success" data-toggle="modal" data-target="#askquestion">我要提问</a>
+                <hr>
+                <ul class="row question-items"></ul>
+                <div class="pagination-container"></div>
+            </div>
+        </div>
+    </div>
+    
 
         </div>
         <div class="col-md-3 layout-side">
             
-	
+    <div class="side-image side-image-pc">
+        <img src="https://s2.loli.net/2024/12/18/vWAzDaP29Z7Ub4h.png">
+    </div>
+    
 
 
+    
+        
 
+    
+    
+    
+    
+    
 
+       
+    </div>
+    
+    
+    
+
+        </div>
+    </div>
 </div>
 
 
 	
-	
-    
+</div>
 
-    
-    
+
+
+
 
 	
 		
@@ -409,7 +402,6 @@
 		
 	
 
-    
 </div>
 
 
@@ -450,19 +442,35 @@
     </script>
 
     
-
-
-
-
 <div id="jinja-data"
-    data-loginurl="/login"
-    data-private-course-url="/courses/join"
-    data-site-type="0"
+    data-userlab-id=""
+    data-course-id="1"
+    data-is-authenticated="false"
+	data-user-joined="false"
+    data-user-logined="false"
+    data-show-student-info-modal="false"
+    data-login-url="/login?next=%2Fcourses%2F1"
+    data-start-newlab-url="/courses/clear"
     
-></div>
-
-<script src="../app/dest/course/index.js?=2016121272249"></script>
-
+    data-faq="/faq"
+    data-comment-post="/courses/1/comments"
+    data-loginurl="/login?next=%2Fcourses%2F1"
+    data-site-type="0"
+    data-report-post="/courses/1/reports"
+    data-recomment-img="../img/recommentReport.png"
+    data-charge-course-phone-code="/user/sms/code"
+    data-join-private-course="/courses/join"
+    data-current-user-id=""
+    data-vip-icon="../img/vip-icon.png"
+    data-vip-index="/vip"
+    data-get-question-url="/courses/1/questions"
+	data-real-price = ""
+    
+    data-query-bill="/purchase/bill/query"
+    data-question-form="/questions/meta"
+    data-qiniu-token-url="/api/qiniu/token"
+    ></div>
+<script src="../app/dest/course/labs.js?=2016121272249"></script>
 
 	
         
@@ -562,6 +570,7 @@
         </script>
     </div>
 </div>
+
 
             
         
